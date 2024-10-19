@@ -8,12 +8,10 @@ import 'virtual:uno.css'
 import type { DefineComponent } from 'vue'
 import { createApp, h } from 'vue'
 
-const appName = import.meta.env.VITE_APP_NAME || ''
-
 createInertiaApp({
   progress: { color: '#5468FF' },
 
-  title: (title) => `${title} - ${appName}`,
+  title: (title) => `${title}`,
 
   resolve: (name) => {
     return resolvePageComponent(

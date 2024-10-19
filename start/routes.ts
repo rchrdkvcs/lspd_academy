@@ -13,7 +13,8 @@ const AuthController = () => import('#controllers/auth_controller')
 import router from '@adonisjs/core/services/router'
 import { middleware } from './kernel.js'
 
-router.get('/login', [AuthController, 'login'])
+router.get('/login', [AuthController, 'render'])
+router.get('/discord/redirect', [AuthController, 'login'])
 router.get('/discord/callback', [AuthController, 'callback'])
 router.get('/logout', [AuthController, 'logout'])
 

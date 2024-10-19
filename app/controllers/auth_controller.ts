@@ -2,6 +2,10 @@ import User from '#models/user'
 import { HttpContext } from '@adonisjs/core/http'
 
 export default class AuthController {
+  async render({ inertia }: HttpContext) {
+    return inertia.render('login')
+  }
+
   async login({ ally }: HttpContext) {
     return ally.use('discord').redirect()
   }
