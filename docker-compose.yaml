@@ -5,19 +5,19 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8082:8082
+      - 3303:3303
     depends_on:
       - database
     environment:
       - TZ=UTC
-      - PORT=8082
+      - PORT=3303
       - HOST=0.0.0.0
       - LOG_LEVEL=info
       - APP_KEY=1BK1iOKyOAzh8pTfNdPtrMbdwidsk2MM
       - NODE_ENV=development
       - SESSION_DRIVER=cookie
       - DB_HOST=database
-      - DB_PORT=5432
+      - DB_PORT=5442
       - DB_USER=root
       - DB_PASSWORD=root
       - DB_DATABASE=app
@@ -29,7 +29,7 @@ services:
   database:
     image: postgres:16-alpine3.19
     ports:
-      - 5555:5432
+      - 5442:5432
     volumes:
       - psql-data:/var/lib/postgresql/data
     environment:
