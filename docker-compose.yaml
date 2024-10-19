@@ -10,14 +10,14 @@ services:
       - database
     environment:
       - TZ=UTC
-      - PORT=3333
-      - HOST=localhost
+      - PORT=8082
+      - HOST=0.0.0.0
       - LOG_LEVEL=info
       - APP_KEY=1BK1iOKyOAzh8pTfNdPtrMbdwidsk2MM
       - NODE_ENV=development
       - SESSION_DRIVER=cookie
-      - DB_HOST=127.0.0.1
-      - DB_PORT=5555
+      - DB_HOST=database
+      - DB_PORT=5432
       - DB_USER=root
       - DB_PASSWORD=root
       - DB_DATABASE=app
