@@ -1,4 +1,31 @@
 services:
+  app:
+    image: td.b34r.fr
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8082:8082
+    depends_on:
+      - database
+    environment:
+      - TZ=UTC
+      - PORT=3333
+      - HOST=localhost
+      - LOG_LEVEL=info
+      - APP_KEY=1BK1iOKyOAzh8pTfNdPtrMbdwidsk2MM
+      - NODE_ENV=development
+      - SESSION_DRIVER=cookie
+      - DB_HOST=127.0.0.1
+      - DB_PORT=5555
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_DATABASE=app
+      - DISCORD_CLIENT_ID=1294419827372327015
+      - DISCORD_CLIENT_SECRET=5DJs_ovDcirFM62mmy1SmGn03qV8hpof
+      - DISCORD_BOT_TOKEN=MTI5NDQxOTgyNzM3MjMyNzAxNQ.GsnCsC.PPwAfcwCXAJFdq-5vSBhpk3ow3oKdU1TLKSPIw
+      - DISCORD_LSPD=965280713886797824
+      - DISCORD_DIVISION=1292138328136880179
   database:
     image: postgres:16-alpine3.19
     ports:
