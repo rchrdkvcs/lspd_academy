@@ -2,7 +2,7 @@
 import HomeController from '#controllers/home_controller'
 import { InferPageProps } from '@adonisjs/inertia/types'
 import { Head } from '@inertiajs/vue3'
-import Navbar from '~/components/navbar.vue'
+import Navbar from '~/components/Navbar.vue'
 import OfficerSections from '~/components/OfficerSections.vue'
 
 const { officers } = defineProps<{
