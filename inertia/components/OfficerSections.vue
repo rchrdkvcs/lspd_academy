@@ -34,7 +34,9 @@ function hasRole(roles: any[], roleId: string) {
         :key="officer.discordId"
       >
         <div class="flex gap-4 items-center">
-          <p class="text-3xl font-semibold color-white color-op-75">{{ officer.serial }}</p>
+          <p class="text-3xl font-semibold color-white color-op-75 w-32px text-center">
+            {{ officer.serial }}
+          </p>
           <div class="flex flex-col">
             <span class="text-lg font-medium capitalize">{{ officer.fullName }}</span>
             <span class="text-base color-white color-op-75">@{{ officer.username }}</span>
