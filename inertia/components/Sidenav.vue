@@ -4,7 +4,7 @@ import { Link } from '@inertiajs/vue3'
 
 <template>
   <aside
-    class="flex flex-col items-center justify-between h-full p-4 border-r border-white w-xs min-w-xs border-op-10"
+    class="flex flex-col items-center justify-between h-full p-4 border-r border-white w-15% min-w-15% border-op-10"
   >
     <div class="flex flex-col items-start justify-start w-full gap-4">
       <Link
@@ -15,12 +15,12 @@ import { Link } from '@inertiajs/vue3'
 
       <nav class="flex flex-col w-full gap-2">
         <Link
-          class="w-full px-4 py-2 transition-all duration-300 ease-in-out rounded-lg color-white color-op-80 hover:color-white hover:bg-slate-8"
+          class="w-full px-4 py-2 transition-all duration-300 ease-in-out rounded-lg color-white color-op-75 hover:color-white hover:bg-coolgray-8"
           href="/"
           >Dashboard</Link
         >
         <Link
-          class="w-full px-4 py-2 transition-all duration-300 ease-in-out rounded-lg color-white color-op-80 hover:color-white hover:bg-slate-8"
+          class="w-full px-4 py-2 transition-all duration-300 ease-in-out rounded-lg color-white color-op-75 hover:color-white hover:bg-coolgray-8"
           href="/officers"
           >Officiers</Link
         >
@@ -28,7 +28,7 @@ import { Link } from '@inertiajs/vue3'
     </div>
 
     <Link
-      class="font-medium transition-all duration-300 ease-in-out color-white color-op-80 hover:color-red-6"
+      class="w-full px-4 py-2 transition-all duration-300 ease-in-out rounded-lg color-white color-op-75 hover:color-white hover:bg-red-6 text-center"
       href="/logout"
       >Déconnexion</Link
     >

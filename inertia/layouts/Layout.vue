@@ -10,7 +10,7 @@ const props = defineProps<{
 <template>
   <Head :title="props.title" />
 
-  <main class="flex bg-slate-9 h-100vh color-white">
+  <main class="flex bg-coolgray-9 h-100vh color-white">
     <Sidenav />
 
     <section class="flex flex-col w-full gap-8 p-8 overflow-auto">
