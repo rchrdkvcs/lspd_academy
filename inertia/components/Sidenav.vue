@@ -4,7 +4,8 @@ import { Link } from '@inertiajs/vue3'
 
 <template>
   <aside
-    class="flex flex-col items-center justify-between h-full p-4 border-r border-white w-292px min-w-292px border-op-10"
+    class="flex flex-col items-center justify-between h-full p-4 border-r border-white w-292px min-w-292px"
+    style="border-color: rgba(255, 255, 255, 0.1)"
   >
     <div class="flex flex-col items-start justify-start w-full gap-4">
       <Link

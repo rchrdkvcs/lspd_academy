@@ -30,7 +30,8 @@ watch(
 <template>
   <Layout title="Registre des officiers">
     <div
-      class="flex gap-2 bg-coolgray-8 bg-opacity-75 rounded-full py-2 px-4 w-1/3 hover:bg-opacity-100 focus:outline-none mx-auto sticky top-0 z-10 transition-colors duration-200 ease-in-out backdrop-blur-lg border border-white border-op-10 shadow-sm"
+      class="flex gap-2 bg-coolgray-8 bg-opacity-75 rounded-full py-2 px-4 w-1/3 hover:bg-opacity-100 focus:outline-none mx-auto sticky top-0 z-10 transition-colors duration-200 ease-in-out backdrop-blur-lg border border-white shadow-sm"
+      style="border-color: rgba(255, 255, 255, 0.1)"
     >
       <i class="color-white color-op-75">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
