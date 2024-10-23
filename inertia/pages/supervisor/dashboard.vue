@@ -11,9 +11,9 @@ const props = defineProps<{
 <template>
   <Layout title="Dashboard">
     <div class="w-full h-full flex flex-col justify-center items-center">
-      <h1 class="flex flex-col gap-2 text-center text-2xl">
+      <h1 class="flex flex-col gap-2 text-center text-2xl color-white color-op-80">
         Bonjour
-        <span class="3xl font-600">
+        <span class="3xl font-600 color-white">
           {{ props.fullName }}
         </span>
       </h1>

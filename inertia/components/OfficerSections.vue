@@ -20,9 +20,9 @@ function hasRole(roles: any[], roleId: string) {
 </script>
 
 <template>
-  <section class="flex flex-col gap-2">
+  <section class="flex flex-col gap-2" v-if="filterOfficersByRoleId(props.roleId).length > 0">
     <div class="flex justify-between items-center w-full">
-      <h2 class="font-bold text-xl">{{ props.label }}</h2>
+      <h2 class="font-semibold text-xl color-white color-op-90">{{ props.label }}</h2>
       <p class="color-white color-op-75 bg-slate-8 rounded-full px-4">
         {{ filterOfficersByRoleId(props.roleId).length }}
       </p>

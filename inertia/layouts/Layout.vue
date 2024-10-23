@@ -13,7 +13,7 @@ const props = defineProps<{
   <main class="flex bg-coolgray-9 h-100vh color-white">
     <Sidenav />
 
-    <section class="flex flex-col w-full gap-8 p-8 overflow-auto">
+    <section class="flex flex-col w-full gap-8 p-8 overflow-auto relative">
       <slot />
     </section>
   </main>
