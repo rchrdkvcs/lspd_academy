@@ -7,11 +7,13 @@
 |
 */
 
-const HomeController = () => import('#controllers/home_controller')
-const AuthController = () => import('#controllers/auth_controller')
-
 import router from '@adonisjs/core/services/router'
 import { middleware } from './kernel.js'
+
+const AuthController = () => import('#controllers/auth_controller')
+const DashboardController = () => import('#controllers/dashboard_controller')
+const OfficersController = () => import('#controllers/officers_controller')
+const DivisionController = () => import('#controllers/divison_controller')
 
 router.get('/login', [AuthController, 'render'])
 router.get('/discord/redirect', [AuthController, 'login'])
@@ -20,6 +22,9 @@ router.get('/logout', [AuthController, 'logout'])
 
 router
   .group(() => {
-    router.get('/', [HomeController, 'index'])
+    router.get('/', [DashboardController, 'render'])
+    router.get('/officers', [OfficersController, 'render'])
+    router.get('/division', [DivisionController, 'render'])
   })
   .use(middleware.auth())
+  .use(middleware.supervisor())

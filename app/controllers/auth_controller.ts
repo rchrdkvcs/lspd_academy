@@ -3,7 +3,7 @@ import { HttpContext } from '@adonisjs/core/http'
 
 export default class AuthController {
   async render({ inertia }: HttpContext) {
-    return inertia.render('login')
+    return inertia.render('auth/login')
   }
 
   async login({ ally }: HttpContext) {

@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import HomeController from '#controllers/home_controller'
+import OfficersController from '#controllers/officers_controller'
 import { InferPageProps } from '@adonisjs/inertia/types'
 
 const props = defineProps<{
   label: string
   roleId: string
-  officers: InferPageProps<HomeController, 'index'>['officers']
+  officers: InferPageProps<OfficersController, 'render'>['officers']
 }>()
 
 function filterOfficersByRoleId(roleId: string) {
@@ -20,16 +20,16 @@ function hasRole(roles: any[], roleId: string) {
 </script>
 
 <template>
-  <section class="flex flex-col gap-2">
+  <section class="flex flex-col gap-2" v-if="filterOfficersByRoleId(props.roleId).length > 0">
     <div class="flex justify-between items-center w-full">
-      <h2 class="font-bold text-xl">{{ props.label }}</h2>
+      <h2 class="font-semibold text-xl color-white color-op-90">{{ props.label }}</h2>
       <p class="color-white color-op-75 bg-slate-8 rounded-full px-4">
         {{ filterOfficersByRoleId(props.roleId).length }}
       </p>
     </div>
     <ul class="w-full flex flex-col gap-2">
       <li
-        class="flex w-full p-2 rounded-lg gap-4 items-center justify-between hover:bg-slate-8 transition-colors duration-200"
+        class="flex w-full p-2 rounded-lg gap-4 items-center justify-between hover:bg-coolgray-8 transition-colors duration-200"
         v-for="officer in filterOfficersByRoleId(props.roleId).sort((a, b) => a.serial - b.serial)"
         :key="officer.discordId"
       >
