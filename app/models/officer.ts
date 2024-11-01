@@ -38,6 +38,12 @@ export default class Officer extends BaseModel {
   @column()
   declare fLinc: boolean
 
+  @column()
+  declare comments: string
+
+  @column()
+  declare decision: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

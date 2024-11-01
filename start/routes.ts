@@ -8,12 +8,16 @@
 */
 
 import router from '@adonisjs/core/services/router'
+import transmit from '@adonisjs/transmit/services/main'
 import { middleware } from './kernel.js'
 
 const AuthController = () => import('#controllers/auth_controller')
 const DashboardController = () => import('#controllers/dashboard_controller')
 const OfficersController = () => import('#controllers/officers_controller')
 const DivisionController = () => import('#controllers/divison_controller')
+const CasparcasController = () => import('#controllers/casparcas_controller')
+
+transmit.registerRoutes()
 
 router.get('/login', [AuthController, 'render'])
 router.get('/discord/redirect', [AuthController, 'login'])
@@ -25,6 +29,7 @@ router
     router.get('/', [DashboardController, 'render'])
     router.get('/officers', [OfficersController, 'render'])
     router.get('/division', [DivisionController, 'render'])
+    router.get('/casparcas', [CasparcasController, 'render'])
   })
   .use(middleware.auth())
   .use(middleware.supervisor())

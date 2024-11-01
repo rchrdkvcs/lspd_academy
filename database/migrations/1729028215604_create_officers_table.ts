@@ -20,6 +20,9 @@ export default class extends BaseSchema {
       table.boolean('f_nego').defaultTo(false)
       table.boolean('f_linc').defaultTo(false)
 
+      table.string('comments').nullable()
+      table.string('decision').nullable()
+
       table.timestamp('created_at')
       table.timestamp('updated_at')
     })

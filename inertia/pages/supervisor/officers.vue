@@ -50,7 +50,7 @@ watch(
     </div>
     <OfficerSections label="Chief of Police" roleId="1288588180509167626" :officers="officers" />
     <OfficerSections label="Commandant" roleId="965280713932947487" :officers="officers" />
-    <OfficerSections label="Sous Commandant" roleId="1291470554921959598" :officers="officers" />
+    <OfficerSections label="Commandant Adj." roleId="1291470554921959598" :officers="officers" />
     <OfficerSections label="Capitaine" roleId="965280713932947486" :officers="officers" />
     <OfficerSections label="Lieutenant II" roleId="965280713886797830" :officers="officers" />
     <OfficerSections label="Lieutenant I" roleId="965280713916166214" :officers="officers" />
