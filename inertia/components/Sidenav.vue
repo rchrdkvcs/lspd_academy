@@ -77,7 +77,7 @@ import { Link } from '@inertiajs/vue3'
               />
             </svg>
           </i>
-          <span>Division</span>
+          <span>Instructeurs</span>
         </Link>
       </nav>
     </div>

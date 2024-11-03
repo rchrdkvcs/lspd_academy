@@ -16,6 +16,7 @@ const DashboardController = () => import('#controllers/dashboard_controller')
 const OfficersController = () => import('#controllers/officers_controller')
 const DivisionController = () => import('#controllers/divison_controller')
 const CasparcasController = () => import('#controllers/casparcas_controller')
+const DiscordController = () => import('#controllers/discord_controller')
 
 transmit.registerRoutes()
 
@@ -29,6 +30,8 @@ router
     router.get('/', [DashboardController, 'render'])
     router.get('/officers', [OfficersController, 'render'])
     router.get('/division', [DivisionController, 'render'])
+    router.post('/create-pto', [DivisionController, 'store'])
+    router.post('/update-pto-message', [DiscordController, 'handle'])
     router.get('/casparcas', [CasparcasController, 'render'])
   })
   .use(middleware.auth())

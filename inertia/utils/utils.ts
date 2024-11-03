@@ -15,6 +15,8 @@ function getRank(roles: any[]) {
     return 'Commandant'
   } else if (roles.some((role) => role.id === '1291470554921959598')) {
     return 'Commandant Adj.'
+  } else if (roles.some((role) => role.id === '965280713932947486')) {
+    return 'Capitaine'
   } else if (roles.some((role) => role.id === '965280713886797830')) {
     return 'Lieutenant II'
   } else if (roles.some((role) => role.id === '965280713916166214')) {

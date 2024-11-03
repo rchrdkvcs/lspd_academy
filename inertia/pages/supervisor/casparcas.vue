@@ -26,24 +26,28 @@ onMounted(() => {
     <div class="grid grid-cols-4 justify-center items-center gap-2">
       <p
         class="text-lg font-medium text-center bg-slate-8 rounded-xl px-4 py-2 bg-opacity-70 backdrop-blur-lg border border-white border-op-05 shadow-sm"
+        style="border-color: rgba(255, 255, 255, 0.1)"
       >
         Promotion <br />
         <span class="text-xl color-white color-op-75">0</span>
       </p>
       <p
         class="text-lg font-medium text-center bg-slate-8 rounded-xl px-4 py-2 bg-opacity-70 backdrop-blur-lg border border-white border-op-05 shadow-sm"
+        style="border-color: rgba(255, 255, 255, 0.1)"
       >
         Licenciement <br />
         <span class="text-xl color-white color-op-75">0</span>
       </p>
       <p
         class="text-lg font-medium text-center bg-slate-8 rounded-xl px-4 py-2 bg-opacity-70 backdrop-blur-lg border border-white border-op-05 shadow-sm"
+        style="border-color: rgba(255, 255, 255, 0.1)"
       >
         Avertissement <br />
         <span class="text-xl color-white color-op-75">0</span>
       </p>
       <p
         class="text-lg font-medium text-center bg-slate-8 rounded-xl px-4 py-2 bg-opacity-70 backdrop-blur-lg border border-white border-op-05 shadow-sm"
+        style="border-color: rgba(255, 255, 255, 0.1)"
       >
         Absence justifiee <br />
         <span class="text-xl color-white color-op-75">0</span>
@@ -52,6 +56,7 @@ onMounted(() => {
 
     <div
       class="grid grid-cols-5 gap-2 bg-slate-8 rounded-xl p-2 font-semibold sticky top-0 z-10 bg-opacity-70 backdrop-blur-lg border border-white border-op-05 shadow-sm"
+      style="border-color: rgba(255, 255, 255, 0.1)"
     >
       <p class="grid-col-span-1">Agent</p>
       <p class="grid-col-span-3">Commentaire</p>

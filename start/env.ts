@@ -53,4 +53,5 @@ export default await Env.create(new URL('../', import.meta.url), {
   DISCORD_BOT_TOKEN: Env.schema.string(),
   DISCORD_LSPD: Env.schema.string(),
   DISCORD_DIVISION: Env.schema.string(),
+  DISCORD_LSPD_DEV: Env.schema.string(),
 })
