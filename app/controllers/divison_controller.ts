@@ -11,7 +11,10 @@ export default class DivisionController {
     const instructeurs = officers.filter(
       (officer) =>
         !officer.roles.some(
-          (role) => role.id === '965280713916166211' || role.id === '1291497374535123016'
+          (role) =>
+            role.id === '965280713916166211' ||
+            role.id === '1291497374535123016' ||
+            role.id === '965280713916166212'
         )
     )
 
