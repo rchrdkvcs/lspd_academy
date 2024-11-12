@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import OfficersController from '#controllers/officers_controller'
+import OfficerController from '#controllers/officer/officer_controller'
 import { InferPageProps } from '@adonisjs/inertia/types'
-import { filterOfficersByRoleId, hasRole } from '~/utils/utils'
+import { filterOfficersByRoleId, hasRole } from '~/composables/utils'
 
 const props = defineProps<{
   label: string
   roleId: string
-  officers: InferPageProps<OfficersController, 'render'>['officers']
+  officers: InferPageProps<OfficerController, 'render'>['officers']
 }>()
 </script>
 
 <template>
   <section
-    class="flex flex-col gap-2"
+    class="flex flex-col gap-4"
     v-if="filterOfficersByRoleId(props.roleId, props.officers).length > 0"
   >
     <div class="flex gap-2 items-center w-full">
@@ -21,9 +21,9 @@ const props = defineProps<{
         ({{ filterOfficersByRoleId(props.roleId, props.officers).length }})
       </p>
     </div>
-    <ul class="w-full flex flex-col gap-2">
+    <ul class="w-full flex flex-col gap-4">
       <li
-        class="flex w-full p-2 rounded-xl gap-4 items-center justify-between transition-colors duration-200 border border-slate-8"
+        class="flex w-full p-2 rounded-xl gap-4 items-center justify-between transition-colors duration-200 border border-neutral-8"
         v-for="officer in filterOfficersByRoleId(props.roleId, props.officers).sort(
           (a, b) => a.serial - b.serial
         )"
@@ -69,49 +69,49 @@ const props = defineProps<{
           </p>
           <!-- First Lincoln -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1290784278405185538')"
           >
             F. Lincoln
           </p>
           <!-- Formation Initiale -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1295815813558964326')"
           >
             F. Initiale
           </p>
           <!-- Formation Securisation -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1295163319430414336')"
           >
             F. Securisation
           </p>
           <!-- Formation Poursuite -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1290784209115414641')"
           >
             F. Poursuite
           </p>
           <!-- Formation Negociation -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1257040893526151208')"
           >
             F. Negociation
           </p>
           <!-- Formation PPA -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1290783991456075798')"
           >
             F. PPA
           </p>
           <!-- Formation Cat 3 -->
           <p
-            class="text-xs bg-slate-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
+            class="text-xs bg-neutral-8 rounded-full px-3 font-semibold flex items-center justify-center h-fit py-1"
             v-if="hasRole(officer.roles, '1275099198869733501')"
           >
             F. Cat 3

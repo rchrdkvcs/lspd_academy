@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import OfficersController from '#controllers/officers_controller'
+import OfficerController from '#controllers/officer/officer_controller'
 import { InferPageProps } from '@adonisjs/inertia/types'
 import { ref, watch } from 'vue'
 import OfficerSections from '~/components/OfficerSections.vue'
 import Layout from '~/layouts/Layout.vue'
 
 const props = defineProps<{
-  officers: InferPageProps<OfficersController, 'render'>['officers']
+  officers: InferPageProps<OfficerController, 'render'>['officers']
 }>()
 
 const search = ref('')
@@ -30,7 +30,7 @@ watch(
 <template>
   <Layout title="Registre des officiers">
     <div
-      class="flex gap-2 bg-coolgray-8 bg-opacity-75 rounded-full py-2 px-4 w-1/3 hover:bg-opacity-100 focus:outline-none mx-auto sticky top-0 z-10 transition-colors duration-200 ease-in-out backdrop-blur-lg border border-white shadow-sm"
+      class="flex gap-2 bg-neutral-8 bg-opacity-75 rounded-xl py-2 px-4 w-1/3 hover:bg-opacity-100 focus:outline-none mx-auto transition-colors duration-200 ease-in-out backdrop-blur-lg border border-white shadow-sm"
       style="border-color: rgba(255, 255, 255, 0.1)"
     >
       <i class="color-white color-op-75">

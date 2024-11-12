@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import DashboardController from '#controllers/dashboard_controller'
+import DashboardController from '#controllers/dashboard/dashboard_controller'
 import { InferPageProps } from '@adonisjs/inertia/types'
 import Layout from '~/layouts/Layout.vue'
 

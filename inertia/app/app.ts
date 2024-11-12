@@ -11,7 +11,7 @@ import { createApp, h } from 'vue'
 createInertiaApp({
   progress: { color: '#5468FF' },
 
-  title: (title) => `${title}`,
+  title: (title) => `LSPD - ${title}`,
 
   resolve: (name) => {
     return resolvePageComponent(
