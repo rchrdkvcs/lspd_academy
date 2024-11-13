@@ -1,7 +1,7 @@
 import Pto from '#models/pto'
 import { HttpContext } from '@adonisjs/core/http'
 import { TextChannel } from 'discord.js'
-import DiscordClientProvider from '../../providers/discord_client_provider.js'
+import DiscordClientProvider from '../providers/discord_client_provider.js'
 
 interface PtoAssignment {
   toDiscordId: string
