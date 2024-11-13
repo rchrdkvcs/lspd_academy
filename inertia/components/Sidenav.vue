@@ -67,7 +67,7 @@ import { Link } from '@inertiajs/vue3'
 
         <Link
           class="flex gap-2 items-center w-full px-4 py-2 transition-all duration-300 ease-in-out rounded-lg color-white color-op-75 hover:color-white hover:bg-coolgray-8"
-          href="/division"
+          href="/training"
         >
           <i>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

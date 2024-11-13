@@ -2,7 +2,7 @@ import Officer from '#models/officer'
 import Pto from '#models/pto'
 import type { HttpContext } from '@adonisjs/core/http'
 
-export default class DivisionController {
+export default class InstructorController {
   async render({ inertia }: HttpContext) {
     const officers = await Officer.all()
     const ptos = await Pto.all()
@@ -47,7 +47,7 @@ export default class DivisionController {
       {} as Record<string, { rk1: string | null; rk2: string | null; rk3: string | null }>
     )
 
-    return inertia.render('supervisor/division', {
+    return inertia.render('instructor/show', {
       instructeurs,
       rookies: availableRookies,
       allRookies,
@@ -73,7 +73,7 @@ export default class DivisionController {
         )
       }
 
-      return response.redirect().toPath('/division')
+      return response.redirect().back()
     } catch (error) {
       return response.status(400).json({
         success: false,

@@ -14,13 +14,7 @@ export default class extends BaseSchema {
       table.string('serial').notNullable()
       table.json('roles')
 
-      table.boolean('f_initiale').defaultTo(false)
-      table.boolean('f_ppa').defaultTo(false)
-      table.boolean('f_ppal').defaultTo(false)
-      table.boolean('f_nego').defaultTo(false)
-      table.boolean('f_linc').defaultTo(false)
-
-      table.string('comments').nullable()
+      table.string('comment').nullable()
       table.string('decision').nullable()
 
       table.timestamp('created_at')

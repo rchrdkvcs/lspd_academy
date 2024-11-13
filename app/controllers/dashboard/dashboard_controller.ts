@@ -6,6 +6,6 @@ export default class DashboardController {
     const authUser = await auth.getUserOrFail()
     const { fullName } = await Officer.findByOrFail('discordId', authUser.discordId)
 
-    return inertia.render('supervisor/dashboard', { fullName })
+    return inertia.render('dashboard/show', { fullName })
   }
 }

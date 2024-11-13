@@ -3,16 +3,14 @@ import { Head } from '@inertiajs/vue3'
 </script>
 
 <template>
-  <Head title="LSPD - Training Division" />
+  <Head title="Connection" />
 
   <main
-    class="bg-dark-9 h-100vh w-full color-white flex justify-center items-center flex-col gap-8"
+    class="bg-neutral-9 h-100vh w-full color-white flex justify-center items-center flex-col gap-8"
   >
-    <h1 class="text-xl font-600 color-red-6">Connection requise</h1>
-
     <a
       href="/discord/redirect"
-      class="px-8 py-4 bg-#5865F2 rounded-xl flex gap-2 justify-center items-center hover:bg-#57F287 hover:color-black transition-all ease-in-out duration-300"
+      class="hover:(bg-#57F287 color-black) px-8 py-4 bg-#5865F2 rounded-xl flex gap-2 justify-center items-center transition-all ease-in-out duration-300"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
         <path
