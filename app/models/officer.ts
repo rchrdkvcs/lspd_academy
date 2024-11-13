@@ -24,7 +24,22 @@ export default class Officer extends BaseModel {
   declare roles: { id: string; name: string }[]
 
   @column()
-  declare comment: string
+  declare fInitiale: boolean
+
+  @column()
+  declare fPpa: boolean
+
+  @column()
+  declare fPpal: boolean
+
+  @column()
+  declare fNego: boolean
+
+  @column()
+  declare fLinc: boolean
+
+  @column()
+  declare comments: string
 
   @column()
   declare decision: string

@@ -1,6 +1,5 @@
-import { defineConfig, presetWind, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetWind } from 'unocss'
 
 export default defineConfig({
   presets: [presetWind()],
-  transformers: [transformerVariantGroup()],
 })
