@@ -13,7 +13,7 @@ dependencies:
     version: 5.0.2(@adonisjs/core@6.14.1)
   '@adonisjs/auth':
     specifier: ^9.2.3
-    version: 9.2.3(@adonisjs/assembler@7.8.2)(@adonisjs/core@6.14.1)(@adonisjs/lucid@21.3.0)(@adonisjs/session@7.5.0)(@japa/plugin-adonisjs@3.0.1)
+    version: 9.2.3(@adonisjs/assembler@7.8.2)(@adonisjs/core@6.14.1)(@adonisjs/lucid@21.3.0)(@adonisjs/session@7.5.0)(@japa/plugin-adonisjs@3.0.2)
   '@adonisjs/core':
     specifier: ^6.14.1
     version: 6.14.1(@adonisjs/assembler@7.8.2)(@vinejs/vine@2.1.0)(edge.js@6.2.0)
@@ -90,7 +90,7 @@ devDependencies:
     version: 3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3)
   '@japa/plugin-adonisjs':
     specifier: ^3.0.1
-    version: 3.0.1(@adonisjs/core@6.14.1)(@japa/runner@3.1.4)
+    version: 3.0.2(@adonisjs/core@6.14.1)(@japa/runner@3.1.4)
   '@japa/runner':
     specifier: ^3.1.4
     version: 3.1.4
@@ -126,7 +126,7 @@ devDependencies:
     version: 5.6.3
   unocss:
     specifier: ^0.63.4
-    version: 0.63.4(postcss@8.4.47)(vite@5.4.8)
+    version: 0.63.4(postcss@8.5.6)(vite@5.4.8)
   vite:
     specifier: ^5.4.8
     version: 5.4.8(@types/node@22.7.5)
@@ -201,7 +201,7 @@ packages:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  /@adonisjs/auth@9.2.3(@adonisjs/assembler@7.8.2)(@adonisjs/core@6.14.1)(@adonisjs/lucid@21.3.0)(@adonisjs/session@7.5.0)(@japa/plugin-adonisjs@3.0.1):
+  /@adonisjs/auth@9.2.3(@adonisjs/assembler@7.8.2)(@adonisjs/core@6.14.1)(@adonisjs/lucid@21.3.0)(@adonisjs/session@7.5.0)(@japa/plugin-adonisjs@3.0.2):
     resolution: {integrity: sha512-my/dqQJo1LQRhT3bW0RuK/1BhDTWcY3tVrGZmVMedCRBfYGt91OAreMy0muukJcWr8AkXBtbBsju2D+myaDa4Q==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
@@ -227,7 +227,7 @@ packages:
       '@adonisjs/lucid': 21.3.0(@adonisjs/assembler@7.8.2)(@adonisjs/core@6.14.1)(luxon@3.5.0)(pg@8.13.0)
       '@adonisjs/presets': 2.6.3(@adonisjs/assembler@7.8.2)(@adonisjs/core@6.14.1)
       '@adonisjs/session': 7.5.0(@adonisjs/core@6.14.1)(edge.js@6.2.0)
-      '@japa/plugin-adonisjs': 3.0.1(@adonisjs/core@6.14.1)(@japa/runner@3.1.4)
+      '@japa/plugin-adonisjs': 3.0.2(@adonisjs/core@6.14.1)(@japa/runner@3.1.4)
       basic-auth: 2.0.1
     transitivePeerDependencies:
       - '@adonisjs/assembler'
@@ -1463,14 +1463,14 @@ packages:
       youch: 3.3.4
       youch-terminal: 2.2.3
 
-  /@japa/plugin-adonisjs@3.0.1(@adonisjs/core@6.14.1)(@japa/runner@3.1.4):
-    resolution: {integrity: sha512-xUZOzfBXSz2sWRoQT+qs+6LZBtWWE+cCBZ3j9ckz6+nPw3VI0nV6yLaX+oud3AY8Zb+BH+pErABBhaovZYv9dA==}
+  /@japa/plugin-adonisjs@3.0.2(@adonisjs/core@6.14.1)(@japa/runner@3.1.4):
+    resolution: {integrity: sha512-yrIif8YYcV4GPXygIm/ndULid/6gIJ/NcylDaAsCw/iKPooU+sgUcZjYWe9AO04xuUJ5nFCvzsM/7q1yP7lxNg==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
-      '@adonisjs/core': ^6.5.0
-      '@japa/api-client': ^2.0.3
+      '@adonisjs/core': ^6.17.0
+      '@japa/api-client': ^2.0.3 || ^3.0.0
       '@japa/browser-client': ^2.0.3
-      '@japa/runner': ^3.1.2
+      '@japa/runner': ^3.1.2 || ^4.0.0
       playwright: ^1.42.1
     peerDependenciesMeta:
       '@japa/api-client':
@@ -2326,7 +2326,7 @@ packages:
       sirv: 2.0.4
     dev: true
 
-  /@unocss/postcss@0.63.4(postcss@8.4.47):
+  /@unocss/postcss@0.63.4(postcss@8.5.6):
     resolution: {integrity: sha512-JnSAV1hAZumkm0KZGXYqWsP2I7wnOdr+oeDckHKLdZR2mHNVbDm46H8XGbie55t/gPftaLSsMbaPvRjU2Fclqg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2336,7 +2336,7 @@ packages:
       '@unocss/core': 0.63.4
       '@unocss/rule-utils': 0.63.4
       css-tree: 3.0.0
-      postcss: 8.4.47
+      postcss: 8.5.6
       tinyglobby: 0.2.9
     transitivePeerDependencies:
       - supports-color
@@ -4365,7 +4365,7 @@ packages:
       debug: 4.3.7
       esbuild: 0.21.5
       jiti: 2.0.0-beta.3
-      jiti-v1: /jiti@1.21.6
+      jiti-v1: /jiti@1.21.7
       pathe: 1.1.2
       tsx: 4.19.1
     transitivePeerDependencies:
@@ -4657,8 +4657,8 @@ packages:
       pretty-format: 25.5.0
     dev: true
 
-  /jiti@1.21.6:
-    resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
+  /jiti@1.21.7:
+    resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
     hasBin: true
     dev: true
 
@@ -5076,6 +5076,12 @@ packages:
     resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
     hasBin: true
 
+  /nanoid@3.3.11:
+    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -5376,8 +5382,8 @@ packages:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
     dev: true
 
-  /pg-cloudflare@1.1.1:
-    resolution: {integrity: sha512-xWPagP/4B6BgFO+EKz3JONXv3YDgvkbVrGw2mTo3D6tVDQRh1e7cqVGvyR3BE+eQgAvx1XhW/iEASj4/jCWl3Q==}
+  /pg-cloudflare@1.3.0:
+    resolution: {integrity: sha512-6lswVVSztmHiRtD6I8hw4qP/nDm1EJbKMRhf3HCYaqud7frGysPv7FYJ5noZQdhQtN2xJnimfMtvQq21pdbzyQ==}
     requiresBuild: true
     dev: false
     optional: true
@@ -5433,7 +5439,7 @@ packages:
       pg-types: 2.2.0
       pgpass: 1.0.5
     optionalDependencies:
-      pg-cloudflare: 1.1.1
+      pg-cloudflare: 1.3.0
     dev: false
 
   /pgpass@1.0.5:
@@ -5444,6 +5450,10 @@ packages:
 
   /picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
+
+  /picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+    dev: true
 
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
@@ -5528,6 +5538,15 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.1.0
       source-map-js: 1.2.1
+
+  /postcss@8.5.6:
+    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+    dev: true
 
   /postgres-array@2.0.0:
     resolution: {integrity: sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==}
@@ -6565,7 +6584,7 @@ packages:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
 
-  /unocss@0.63.4(postcss@8.4.47)(vite@5.4.8):
+  /unocss@0.63.4(postcss@8.5.6)(vite@5.4.8):
     resolution: {integrity: sha512-MQ/ktuJ2MoXBsd117DEONFubJRQN6Og4mQJLbT+0nna2aTW4jYJESJ479mJYWq/ajonxEaM+zrf8M92VIWxzEw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6580,7 +6599,7 @@ packages:
       '@unocss/astro': 0.63.4(vite@5.4.8)
       '@unocss/cli': 0.63.4
       '@unocss/core': 0.63.4
-      '@unocss/postcss': 0.63.4(postcss@8.4.47)
+      '@unocss/postcss': 0.63.4(postcss@8.5.6)
       '@unocss/preset-attributify': 0.63.4
       '@unocss/preset-icons': 0.63.4
       '@unocss/preset-mini': 0.63.4
